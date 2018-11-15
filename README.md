@@ -6,15 +6,23 @@ The tool uses a thread pool ( with default 2 threads) to search for the contract
 
 # Prerequisite
 
+You will require python3 to run this tool.
+
 In order to run this you will need 'click' package in python. If you dont have 'click' package use 
 
 ```pip install click```
+
+You will also need web3.py. Install using 
+```pip install web3```
 
 You will also require an infura host with you API secret. You create the api secret here:
 https://infura.io/
 
 
 # Usage:
+
+Clone the repo
+``` git clone https://github.com/heychessy/smartcontract-search-tool.git```
 
 Run the following in terminal 
 
