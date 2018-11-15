@@ -43,8 +43,8 @@ def search(contract, host):
 
 
 def startSearch():  # Latest blocks will be searched first
-    startBlock = 100
-    latestBlock = 6665776
+    startBlock = 1
+    latestBlock = w3.eth.blockNumber
     global executor
     executor = futures.ThreadPoolExecutor(max_workers=MAX_THREADS)
     results = executor.map(searchBlock, range(latestBlock, startBlock, -1))
